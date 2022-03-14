@@ -1,6 +1,6 @@
 <launch> 
 
-  <node pkg="mtx_driver" type="mtx" name="mtx_driver" respawn="false" output="screen">
+  <node pkg="xsens_mtx_driver" type="mtx" name="xsens_mtx_driver" respawn="false" output="screen">
   </node>
 
   

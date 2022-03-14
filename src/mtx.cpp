@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 	short screenSkipFactor = 10;
 	short screenSkipFactorCnt = screenSkipFactor;
 
-	initscr();
+	// initscr();
 	noecho();
 	nodelay(stdscr, 1);
 	keypad(stdscr, 1);
@@ -115,9 +115,9 @@ int main(int argc, char **argv)
 									nh.advertise<sensor_msgs::Imu>("/imu_2", 100),
 									nh.advertise<sensor_msgs::Imu>("/imu_3", 100)};
 	
-	ros::Publisher cal_imu_pub_[3] = {nh.advertise<sensor_msgs::Imu>("/cal_imu_1", 100),
-									nh.advertise<sensor_msgs::Imu>("/cal_imu_2", 100),
-									nh.advertise<sensor_msgs::Imu>("/cal_imu_3", 100)};
+	// ros::Publisher cal_imu_pub_[3] = {nh.advertise<sensor_msgs::Imu>("/cal_imu_1", 100),
+	// 								nh.advertise<sensor_msgs::Imu>("/cal_imu_2", 100),
+	// 								nh.advertise<sensor_msgs::Imu>("/cal_imu_3", 100)};
 	
 	
 	while (!userQuit && res == XRV_OK && ros::ok()) 
