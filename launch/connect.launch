@@ -1,0 +1,9 @@
+<launch> 
+
+  <node pkg="mtx_driver" type="mtx" name="mtx_driver" respawn="false" output="screen">
+  </node>
+
+  
+  
+</launch>
+  
