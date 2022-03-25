@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 	short screenSkipFactor = 10;
 	short screenSkipFactorCnt = screenSkipFactor;
 
-	// initscr();
+	initscr();
 	noecho();
 	nodelay(stdscr, 1);
 	keypad(stdscr, 1);
