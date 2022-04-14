@@ -226,6 +226,7 @@ int main(int argc, char **argv)
 			}
 
 			imu_data.header.stamp = ros::Time::now();
+			imu_data.header.frame_id = "world";
 			imu_data.orientation_covariance[0] = 0.01745;
 			imu_data.orientation_covariance[4] = 0.01745;
 			imu_data.orientation_covariance[8] = 0.15708;
